@@ -1,0 +1,21 @@
+/*Comentário em CSS - Seletor de elementos - linha 2*/
+h1{
+    color: navy
+}
+/* Seletor de ID  */
+#xuxu{
+    background-color: greenyellow;
+}
+/* Seletor de classe */
+/*Afeta todos os elementos da classe estiloso*/
+.estiloso{
+    border-style: solid;
+}
+
+/* Afeta apenas os paragrafos da classe centraliza*/
+
+p.centraliza{
+
+    text-align: center;
+
+}
