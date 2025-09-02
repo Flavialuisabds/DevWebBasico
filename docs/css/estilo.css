@@ -1,0 +1,35 @@
+/*Seletor de ID*/
+body{
+    background-color: rgb(100, 128, 128);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Seletor de classe*/
+.central{
+    text-align: center;
+}
+
+.item-menu{
+    display: inline;
+    margin: 0.6rem;
+    background-color: darkslategrey;
+    padding: 0.7rem;
+    padding-right: 1rem;
+    border-style: double;
+    border-width: 0.3rem;
+    border-color:rgb(15, 102, 15)
+}
+
+.item-menu:hover{
+    background-color:rgb(15, 102, 15)
+}
+.item-menu a:hover{
+    text-decoration: darkseagreen;
+    color:lightgreen
+}
+.menu{background-color: darkslategrey;
+    padding: 0.7rem;
+}
+
+td{
+    padding:0.5rem;
+}
