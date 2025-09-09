@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div>
+    <h1>Formulários HTML</h1>
+    <div>
+</div>
+
+    <form action="#" method="post"> 
+
+    <label for ="nome">Nome (Obrigatório)</label>
+<input type="text" name="nome" id="nome"
+ placeholder="Digite seu nome" maxlength="6" required>
+
+ <label for="e-mail">E-mail</label>
+ <input type="e-mail" id="email" placeholder="email@email.com">
+
+ <label for="Periodo">Período</label>
+ <input type="number" name="periodo" id="periodo" max="7" min="1">
+ <!--Comentário-->
+<label for="senha">Senha</label>
+<input type="password" id="senha" name="senha" maxlenth="7">
+
+<label for="nas">Data de Nascimento</label>
+<input type="date" name="nasc" id="nasc">
+
+<label for="feliz">Nível de felicidade</label>
+<input type="range" name="feliz" id="feliz"
+
+<p>Você gosta de estudar?</p>
+<label for="estuda">Sim</label>
+<input type="radio" name="sim">
+<label for="naoestuda">Não</label>
+<input type="radio" name="estuda">
+
+<p>Quais matérias você mais gosta?</p>
+<label for="alg">Algoritmos</label>
+<input type="checkbox" name="alg">
+<label for="bds">Banco de Dados</label>
+<input type="checkbox" name="bds">
+<label for="dw">Desenvolvimento Web</label>
+<input type="checkbox" name="dw">
+<label for="pj">Projeto de Extensão</label>
+<input type="checkbox" name="pj">
+
+
+ <input type="submit" value="Salvar">
+
+    </form>
+
+    </div>
+    
+</body>
+</html>
