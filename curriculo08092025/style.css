@@ -1,0 +1,87 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /*Remove as margens padrão do navegador*/
+    background-color: #f9f9f9; /*Cor de fundo da página*/
+    color: #333;/*Cor padrão do texto*/
+}
+
+/* Cabeçalho */
+header {
+    background-color: #d2d3bc; /*Cor de fundo do cabeçalho*/
+    color: rgb(58, 55, 55); /*Cor do texto (cinza bem escuro).*/
+    text-align: center; /*Centraliza o conteúdo do cabeçalho.*/
+    padding: 20px; /* Cria espaço interno, em volta do texto.*/
+}
+/*Foto curriculo*/
+.foto-fixa {
+    position: absolute;
+    top: 20px;   /* distância do topo */
+    left: 60px;  /* distância da esquerda */
+    width: 140px; /* largura da foto*/
+    height: 140px;/*altura da foto*/
+    border-radius: 10%; /*borda da foto*/
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3); /* sombra para destaque */
+}
+
+
+/* Menu */
+nav ul {
+    list-style: none; /*Remove as bolinhas da lista*/
+    margin: 0; /**/
+    padding: 10px; /*Espaçamento interno da lista.*/
+    display: flex; /*Organiza os itens do menu em linha (layout flexível)*/
+    justify-content: center; /*Centraliza os itens no meio da barra*/
+    background-color: #333;/*Fundo do menu em cinza escuro*/
+}
+nav ul li {
+    margin: 0 15px; /*Define espaço lateral entre cada item do menu.*/
+}
+nav ul li a {
+    color: white; /*Links do menu ficam brancos*/
+    text-decoration: none; /*Remove o sublinhado padrão.*/
+    font-weight: bold; /*Deixa o texto em negrito.*/
+}
+nav ul li a:hover {
+    color: #49a24c;
+}/*Quando o mouse passa em cima, a cor do link muda para verde (hover = efeito ao passar o mouse).*/
+
+/* Seções */
+section {
+    padding: 20px;/*Espaçamento interno (entre o texto e a borda da seção)*/
+    margin: 15px;/*Espaçamento externo (entre as seções).*/
+    border-radius: 8px;/*Arredonda os cantos.*/
+    background-color: white; /*Fundo branco para destacar cada seção.*/
+  
+}
+
+ p {
+      font-size: 16px;
+      line-height: 1.8; /* 1.8 vezes o tamanho da fonte- espaçamento entre as linhas */
+    }
+
+/* Estilização dos títulos */
+h3 {
+    border-bottom: 2px solid #368139; /*Linha verde embaixo do título*/
+    padding-bottom: 5px; /*Dá espaço entre o texto e a linha.*/
+}
+
+/* Rodapé */
+footer {
+    text-align: center; /*Texto centralizado.*/
+    background-color: #333;/*Fundo escuro, pare destaque*/
+    color: white;/*Texto branco.*/
+    padding: 15px; /*Espaçamento interno.*/
+    margin-top: 20px; /*Espaço entre o rodapé e o conteúdo acima.*/
+}
+
+/* Layout responsivo - aplica estilos só em telas menores que 600px (celulares). */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;/*O menu deixa de ser em linha e passa a ficar em coluna.*/
+        text-align: center;/*Centraliza os itens do menu.*/
+    }
+    nav ul li {
+        margin: 10px 0;/*Adiciona espaço entre cada item da lista.*/
+    }
+}
