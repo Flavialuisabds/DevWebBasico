@@ -1,0 +1,163 @@
+/* ===============================
+   VARIÁVEIS DE CORES
+================================= */
+:root {
+  --cor-principal: #1d4c93; /* Bootstrap do cabeçalho e título*/
+  --cor-escura: #030e17; /*/cor do texto principal */
+  --cor-clara: #cfd7df; /* cor de fundo */
+  --cor-secundaria: #13171b; /* cor de textos secundários */
+  --cor-destaque: #0e1a23; /* cor de destaque do cabeçalho */
+ 
+}
+
+/* ===============================
+   ESTILO GERAL
+================================= */
+body {
+  font-family: "Lucida Sans", Arial, sans-serif;
+  line-height: 1.8; 
+  color: var(--cor-escura);
+  background-color: var(--cor-clara);
+  margin: 0;
+  padding: 0;
+}
+
+/* ===============================
+   CABEÇALHO
+================================= */
+header {
+  background: linear-gradient(135deg, var(--cor-principal), var(--cor-destaque));
+  box-shadow: 0 2px 10px rgba(8, 8, 8, 0.2);
+  color: #fff;
+}
+
+header h1 {
+  font-weight: 1500; /* Negrito extra para o título */
+  font-size: 3rem; /* Tamanho maior para o título */
+  letter-spacing: 1px; /* Espaçamento entre letras */
+  margin-bottom: 0.5rem; /* Espaçamento entre o título e o subtítulo */
+}
+
+header p {
+  font-size: 1.5rem; /* Tamanho maior para o subtítulo */
+  
+}
+
+/* ===============================
+   CONTEÚDO PRINCIPAL
+================================= */
+
+main {
+  margin-top: 3rem;/* Espaçamento superior */
+  margin-bottom: 3rem; /* Espaçamento inferior */
+}
+/* Estilo do Nome do artigo  */
+article h2 {
+  font-weight: 10000; /* Negrito extra para o título */
+  font-size: 2rem; /* Tamanho maior para o título */
+  color: var(--cor-principal); /* Cor principal para o título */
+  margin-bottom: 2rem; /* Espaçamento abaixo do título */
+}
+
+/* Estilo dos parágrafos*/
+article p {
+  text-align: justify; /* Justificar o texto para melhor leitura */
+  margin-bottom: 1.2rem; /* Espaçamento entre parágrafos */
+  font-size: 1.05rem;/* Tamanho de fonte ligeiramente maior */
+}
+
+
+/* ===============================
+   IMAGEM LATERAL
+================================= */
+
+/* Estilo do contêiner da imagem lateral */
+aside img {
+  border-radius: 10px; /* Cantos arredondados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra suave */  
+  transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transição suave */
+  width: 100%; /* Largura total do contêiner */
+  max-width: 100%; /* Garantir que a imagem não ultrapasse o contêiner */
+}
+
+/* Efeito ao passar o mouse sobre a imagem */
+aside img:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+  box-shadow: 0 6px 20px rgba(157, 54, 54, 0.25); /* Sombra mais intensa ao passar o mouse */
+}
+
+/* Estilo do texto abaixo da imagem */
+aside p {
+  font-size: 0.80rem; /* Tamanho menor para o texto */
+  color: var(--cor-secundaria); /* Cor secundária para o texto */
+  margin-top: 0.5rem; /* Espaçamento acima do texto */
+  text-align: center; /* Centralizar o texto */
+}
+
+/* Estilo do contêiner da imagem lateral */
+aside img {
+  border-radius: 10px; /* Cantos arredondados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra suave */  
+  transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transição suave */
+  width: 100%; /* Largura total do contêiner */
+  max-width: 100%; /* Garantir que a imagem não ultrapasse o contêiner */
+}
+
+/* Efeito ao passar o mouse sobre a imagem */
+aside img:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+  box-shadow: 0 6px 20px rgba(157, 54, 54, 0.25); /* Sombra mais intensa ao passar o mouse */
+}
+
+/* Estilo do texto abaixo da imagem */
+aside p {
+  font-size: 0.80rem; /* Tamanho menor para o texto */
+  color: var(--cor-secundaria); /* Cor secundária para o texto */
+  margin-top: 0.5rem; /* Espaçamento acima do texto */
+  text-align: center; /* Centralizar o texto */
+}
+
+/* ===============================
+   RODAPÉ
+================================= */
+footer {
+  background-color: var(--cor-escura); /* Cor de fundo do rodapé */
+  color: #ddd; /* Cor do texto do rodapé */
+  padding: 1rem 0; /* Espaçamento interno */
+  font-size: 0.9rem;/* Tamanho de fonte menor */
+  text-align: center; /* Centralizar o texto */
+  letter-spacing: 0.3px; /* Espaçamento entre letras */
+}
+
+footer p {
+  margin: 0; /* Remover margem padrão */
+}
+
+/* ===============================
+   RESPONSIVIDADE
+================================= */
+
+/* Ajustes para telas menores */
+@media (max-width: 992px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  main {
+    margin-top: 2rem;
+  }
+
+  article, aside {
+    text-align: center;
+  }
+
+  aside img {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  article p {
+    font-size: 1rem;
+  }
+}
